@@ -12,7 +12,7 @@ body{
 }
 header{
     height: 100px;
-    background-color: blue;
+    background-color: rgb(13, 13, 13);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,18 +47,41 @@ nav a {
     text-align: center;
 }
 nav a:hover{
-    background-color: rgb(49, 66, 141);
+    background-color: rgb(12, 12, 12);
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+section:nth-child(2) div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1020px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
 section:last-of-type {
     display: flex;
-    width: 960px;
+    width: 960px; 
+    margin-bottom: 15px;
 }
 footer{
 background-color: black;    
 height: 75px;
+}
+
+div + p {
+
+    overflow: scroll;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+}
+.a {
+    overflow-y: scroll;
+    height: 400px;
 }
